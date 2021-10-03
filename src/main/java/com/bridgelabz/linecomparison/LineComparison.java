@@ -45,21 +45,29 @@ public class LineComparison {
         return line2;
     }
 
-    public void compareTo() {
-        double line1Length = lengthOfLine1();
-        double line2Length = lengthOfLine2();
+    double line1Length = lengthOfLine1();
+    double line2Length = lengthOfLine2();
+
+    public void equalsTo() {
         if (line1Length == line2Length) {
-            System.out.println("Both lines are Equal");
-        } else if (line1Length > line2Length) {
-            System.out.println("line1 is greter than line2");
+            System.out.println("Lines are Equal");
         } else {
-            System.out.println("line2 is greter than line1");
+            System.out.println("Calling compareTo method");
+        }
+    }
+
+    public void compareTo() {
+        if (line1Length > line2Length) {
+            System.out.println("Line1 is grater than Line2 ");
+        } else {
+            System.out.println("lines2 is grater than line1");
         }
     }
 
     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparison Computation Program.!!!");
         LineComparison lineMethods = new LineComparison();
+        lineMethods.equalsTo();
         lineMethods.compareTo();
     }
 }
