@@ -40,8 +40,8 @@ public class LineComparison {
         System.out.println("Enter y4: ");
         y4 = sc.nextInt();
         //calculation line2 length
-        line2 = Math.sqrt(Math.pow((x4-x3), 2)) + Math.pow((y4-y3), 2);
-        System.out.println("Length of line: " +line2);
+        line2 = Math.sqrt(Math.pow((x4 - x3), 2)) + Math.pow((y4 - y3), 2);
+        System.out.println("Length of line: " + line2);
         return line2;
     }
 
@@ -53,7 +53,7 @@ public class LineComparison {
         double line2Length = lineMethods.lengthOfLine2();
         if (line1Length == line2Length) {
             System.out.println("Both lines are Equal");
-        }else {
+        } else {
             System.out.println("Both lines are not Equal");
         }
     }
